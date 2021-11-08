@@ -1,0 +1,186 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*sccs del index.html*/
+header {
+  width: 100%;
+  text-align: center;
+}
+header .logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+}
+header nav .menuNav {
+  margin: 20px;
+  padding: 0;
+  list-style-type: none;
+  background-color: #ddf7d6;
+  width: 100%;
+}
+header nav .menuNav li {
+  margin: 15px;
+  display: inline-block;
+  text-align: center;
+}
+header nav .menuNav li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+header nav .menuNav li a:hover {
+  background-color: white;
+  border-radius: 100%;
+}
+header nav ul ul {
+  position: absolute;
+  display: none;
+}
+header nav a {
+  text-decoration: none;
+}
+header nav ul li:hover ul {
+  background-color: #ddf7d6;
+  display: flex;
+  flex-direction: column;
+}
+header nav .subMenu1 {
+  z-index: 1;
+  margin: 0px;
+  padding: 0px;
+}
+
+main .container {
+  width: 100%;
+}
+
+.productosDestacados {
+  text-align: center;
+}
+
+.containerGrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin-top: 2px;
+}
+.containerGrid .imagenProductosDestacados {
+  display: flex;
+  flex: flex wrap;
+  margin: 20px;
+  padding: 0;
+  width: 300px;
+}
+
+/*scss de macetas.html*/
+div .tituloMacetas {
+  text-align: center;
+}
+
+main .imagenesDeProductos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .imagenesDeProductos div .imagenUno a img {
+  margin: 10px;
+  width: 100px;
+  padding: 60px;
+  border: none;
+}
+main .imagenesDeProductos div .imagenDos a img {
+  margin: 10px;
+  width: 250px;
+  padding: 60px;
+  border: none;
+}
+main .imagenesDeProductos div .imagenTres a img {
+  margin: 10px;
+  width: 250px;
+  padding: 60px;
+  border: none;
+}
+main .imagenesDeProductos div .divMainMacetas {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+main .imagenesDeProductos div .imgDivMacetas {
+  width: 25em;
+}
+main .imagenesDeProductos div .textoNombre {
+  font-family: "Fresca", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+main .imagenesDeProductos div .precio {
+  font-family: "Fresca", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}/*# sourceMappingURL=estilo.css.map */
+
+/*Footer*/
+
+.pie-pagina{
+  width: 100%;
+  background-color: #ddf7d6;
+}
+
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+  justify-content: space-between;
+}
+
+.pie-pagina .grupo-1 .box .footer-redessociales .row{
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.pie-pagina .grupo-1 .box .footer-contacto .row img{
+  width: 25px;
+  height: 25px;
+
+}
+
+.pie-pagina .grupo-1 .box .footer-redessociales .row img{
+  width: 25px;
+  height: 25px;
+  transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .box .footer-redessociales .row img:hover{
+  background-color: #88C86B;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width:812px){
+  .pie-pagina .grupo-1{
+    width: 90%;
+    margin-bottom: 30px;
+    padding: 10px 0px;
+    display: flex;
+  }
+
+  ..pie-pagina .grupo-1 .box .footer-contacto{
+    width: 80%;
+  }
+  
+  .pie-pagina .grupo-1 .box .footer-contacto .row img{
+    width: 25px;
+    height: 25px;
+  }
+}
+
+  

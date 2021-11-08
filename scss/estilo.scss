@@ -1,0 +1,135 @@
+/*sccs del index.html*/ 
+
+header{
+  width: 100%;
+  text-align: center;
+  .logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px
+  }
+  
+  nav{
+
+    .menuNav{
+      margin: 20px; 
+      padding: 0; 
+      list-style-type: none;
+      background-color: rgb(221, 247, 214);
+      width: 100%;
+      }
+     .menuNav li{
+        margin: 15px;
+        display: inline-block;
+        text-align: center;
+      
+      }
+     .menuNav li a{
+        text-decoration: none; 
+        color: black;
+        display: block;
+      }
+      .menuNav li a:hover{
+        background-color: white;
+        border-radius: 100%;
+      }
+      ul ul{
+        position: absolute;
+        display: none;
+      }
+      a{
+        text-decoration: none;
+      }
+      
+      ul li:hover ul{
+        background-color: rgb(221, 247, 214);
+        display: flex;
+        flex-direction: column;
+      }
+    .subMenu1{
+        z-index: 1;
+        margin: 0px;
+        padding: 0px;
+      }
+   }
+  }
+
+main{
+  .container{
+    width: 100%;
+  }
+}
+
+.productosDestacados{
+    text-align: center;
+  }
+
+.containerGrid{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin-top: 2px;
+  .imagenProductosDestacados{
+    display: flex;
+    flex: flex wrap;
+    margin: 20px;
+    padding: 0;
+    width: 300px;
+  }
+}
+
+.footerFondo{
+    background-color: black;
+    margin: 20px;
+    padding: 0;
+    width: 100%;
+  }
+  .footerColorTexto{
+    color:white
+  }
+
+/*scss de macetas.html*/
+
+div{
+    .tituloMacetas{
+      text-align: center;}
+}
+
+main{
+  .imagenesDeProductos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  div{
+    .imagenUno a img{
+      margin: 10px;
+    width: 100px;
+    padding: 60px;
+    border: none;
+
+    .divMainMacetas{
+      width: min-content;
+    
+    .imagenDos a img{
+        margin: 10px;
+        width: 250px;
+        padding: 60px;
+        border: none;
+      
+    .imagenTres a img{
+        margin: 10px;
+        width: 250px;
+        padding: 60px;
+        border: none;
+    .imgDivMacetas{
+      width: 25em;
+    .textoNombre{
+      font-family:'Fresca', sans-serif;
+      font-weight: bold;
+      text-align: center;
+    .precio{
+    font-family:'Fresca', sans-serif;
+    font-weight: bold;
+    text-align: center;
+  }
+  }
+}
+}

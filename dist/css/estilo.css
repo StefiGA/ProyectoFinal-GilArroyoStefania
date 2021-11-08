@@ -1,0 +1,281 @@
+@charset "UTF-8";
+/*Primeros estilos de CSS*/
+.mainIndex {
+  background-color: #a7ca7d;
+}
+
+.footerFondo {
+  background-color: black;
+  margin: 20px;
+  padding: 0;
+  width: 100%;
+}
+
+.footerColorTexto {
+  color: white;
+}
+
+p {
+  color: #070606;
+}
+
+th {
+  background-color: #cccccc;
+  border: 1px solid;
+}
+
+/*CSS de la pagina quiénes somos actualizado con grid*/
+.BodyQuienesSomos {
+  background-color: #e9fcd2;
+}
+
+.HeaderQuienesSomos {
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+}
+
+.estiloTexto {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.formatoTexto {
+  line-height: 1, 6;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+.containerMain {
+  display: grid;
+  grid-template-areas: "div section" "div section";
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  margin-top: 50px;
+  grid-gap: 1rem;
+}
+
+.estiloTexto {
+  grid-area: section;
+}
+
+.classDiv {
+  grid-area: div;
+  margin: 10px;
+}
+
+/*media queries*/
+@media only screen and (max-width: 834px) and (min-width: 415px) {
+  .BodyQuienesSomos {
+    background-color: red;
+  }
+
+  .containerMain {
+    display: grid;
+    grid-template-areas: "div" "section";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    margin-top: 10px;
+    grid-gap: 1rem;
+  }
+
+  .classDiv {
+    width: 50%;
+  }
+
+  p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .HeaderQuienesSomos {
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: center;
+  }
+}
+@media (max-width: 414px) {
+  .containerMain {
+    display: grid;
+    grid-template-areas: "div" "section";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    margin-top: 10px;
+    grid-gap: 1rem;
+  }
+
+  .BodyQuienesSomos {
+    background-color: green;
+  }
+
+  p {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .HeaderQuienesSomos {
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: center;
+  }
+}
+/*CSS de barra de navegación y header*/
+header {
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+}
+
+.menuNav {
+  margin: 20px;
+  /*hace que se centre el menu*/
+  padding: 0;
+  /*para eliminar el especio entre la linea y el borde*/
+  list-style-type: none;
+  background-color: #ddf7d6;
+  width: 100%;
+}
+
+.menuNav li {
+  margin: 15px;
+  display: inline-block;
+  text-align: center;
+}
+
+.menuNav li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.menuNav li a:hover {
+  background-color: white;
+  border-radius: 100%;
+}
+
+ul ul {
+  position: absolute;
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li:hover ul {
+  background-color: #ddf7d6;
+  display: flex;
+  flex-direction: column;
+}
+
+.subMenu1 {
+  z-index: 1;
+  margin: 0px;
+  padding: 0px;
+}
+
+.imagenCarrusel {
+  margin: 20px;
+  padding: 0;
+  width: 100%;
+  left: 500px;
+}
+
+.productosDestacados {
+  text-align: center;
+}
+
+/*grid en el index*/
+.containerGrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin-top: 2px;
+}
+
+.imagenProductosDestacados {
+  display: flex;
+  flex: flex wrap;
+  margin: 20px;
+  padding: 0;
+  width: 300px;
+}
+
+/*Categoria Macetas*/
+.tituloMacetas {
+  text-align: center;
+}
+
+.imagenUno a img {
+  margin: 10px;
+  width: 100px;
+  padding: 60px;
+  border: none;
+}
+
+.textoNombre {
+  font-family: "Fresca", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.precio {
+  font-family: "Fresca", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.imagenDos a img {
+  margin: 10px;
+  width: 250px;
+  padding: 60px;
+  border: none;
+}
+
+.imagenTres a img {
+  margin: 10px;
+  width: 250px;
+  padding: 60px;
+  border: none;
+}
+
+.imagenesDeProductos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imgDivMacetas {
+  width: 25em;
+}
+
+.divMainMacetas {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+/*Articulos de Jardineria*/
+.imgDivArticulos {
+  width: 25em;
+}
+
+.divMainArticulos {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+/*Animaciones y transformaciones */
+.fotoProductoInicio:hover {
+  transform: scale(1.1, 1.1);
+}
+
+/*carusel*/
+.container {
+  width: 100%;
+}
+
+/*carrusel2*/
+.container {
+  width: 100%;
+}/*# sourceMappingURL=estilo.css.map */

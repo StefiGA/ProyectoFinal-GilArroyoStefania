@@ -173,7 +173,7 @@ main .imagenesDeProductos div .precio {
     display: flex;
   }
 
-  ..pie-pagina .grupo-1 .box .footer-contacto{
+  .pie-pagina .grupo-1 .box .footer-contacto{
     width: 80%;
   }
   

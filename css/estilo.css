@@ -52,8 +52,12 @@ header nav .subMenu1 {
   padding: 0px;
 }
 
-main .container {
+main .container .carousel-inner img{
   width: 100%;
+}
+
+main .container .carousel-inner{
+  height: 200px;
 }
 
 .productosDestacados {
@@ -166,21 +170,22 @@ main .imagenesDeProductos div .precio {
 }
 
 @media screen and (max-width:812px){
-  .pie-pagina .grupo-1{
+  .pie-pagina .grupo-1 {
     width: 90%;
     margin-bottom: 30px;
     padding: 10px 0px;
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .pie-pagina .grupo-1 .box .footer-contacto{
-    width: 80%;
-  }
-  
   .pie-pagina .grupo-1 .box .footer-contacto .row img{
-    width: 25px;
-    height: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
+
 }
 
   

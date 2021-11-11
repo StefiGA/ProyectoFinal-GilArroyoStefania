@@ -193,6 +193,12 @@ main .imagenesDeProductos div .precio {
     margin-top: 30px;
   }
 
+  .box .footer-redessociales .row a img{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
 }
 
 /*css de macetas html*/
@@ -210,7 +216,7 @@ main .imagenesDeProductos div .precio {
   margin: 5px;
   text-align: center;
   align-items: center;
-  background-color: #88C86B;
+  background-color: #ddf7d6;
 }
 
 .personas .contenedor{

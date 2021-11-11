@@ -32,6 +32,7 @@ header nav .menuNav li a {
 }
 header nav .menuNav li a:hover {
   background-color: white;
+  line-height: 30px;
   border-radius: 100%;
 }
 header nav ul ul {
@@ -164,7 +165,7 @@ main .imagenesDeProductos div .precio {
 }
 
 .pie-pagina .grupo-1 .box .footer-redessociales .row img:hover{
-  background-color: #88C86B;
+  background-color: #ddf7d6;
   line-height: 40px;
   border-radius: 50%;
 }
@@ -188,4 +189,51 @@ main .imagenesDeProductos div .precio {
 
 }
 
-  
+/*prueba*/
+
+.contenedor{
+  width: 100%;
+  margin: auto;
+}
+
+.personas .contenedor .persona__columna img{
+  width: 100%;
+}
+
+.persona__columna{
+  margin: 5px;
+  text-align: center;
+  align-items: center;
+  background-color: #88C86B;
+}
+
+.personas .contenedor{
+  display: grid;
+}
+
+@media(min-width:520px) {
+  .personas .contenedor{
+    grid-template-columns: repeat(2,50%);
+  }
+}
+
+@media(min-width:728px) {
+  .personas .contenedor{
+    grid-template-columns: repeat(3,33.3%);
+  }
+}
+
+@media(min-width:1024px) {
+  .personas .contenedor{
+    grid-template-columns: repeat(4,25%);
+  }
+  .contenedor{
+    width: 1024px;
+  }
+}
+
+@media(min-width:1200px) {
+  .contenedor{
+    width: 1200px;
+  }
+}

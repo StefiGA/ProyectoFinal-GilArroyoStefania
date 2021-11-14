@@ -207,6 +207,7 @@ main .imagenesDeProductos div .precio {
 .contenedor{
   width: 100%;
   margin: auto;
+  margin-top: 20px;
 }
 
 .personas .contenedor .persona__columna img{
@@ -220,9 +221,6 @@ main .imagenesDeProductos div .precio {
   background-color: #ddf7d6;
 }
 
-.persona__columna h4{
-  background-color: #c8c8c8;
-}
 
 .personas .contenedor{
   display: grid;
@@ -253,4 +251,72 @@ main .imagenesDeProductos div .precio {
   .contenedor{
     width: 1200px;
   }
+}
+
+/*index productos destacados*/
+
+.contenedorDeProductDestac{
+  width: 100%;
+  margin: auto;
+}
+
+.productosDestacados .contenedorDeProductDestac .pd__columna img{
+  width: 100%;
+}
+
+.pd__columna{
+  margin: 5px;
+  text-align: center;
+  align-items: center;
+  background-color: #ddf7d6;
+}
+
+
+.productosDestacados .contenedorDeProductDestac{
+  display: grid;
+}
+
+@media(min-width:520px) {
+  .productosDestacados .contenedorDeProductDestac{
+    grid-template-columns: repeat(2,50%);
+  }
+}
+
+@media(min-width:728px) {
+  .productosDestacados .contenedorDeProductDestac{
+    grid-template-columns: repeat(3,33.3%);
+  }
+}
+
+@media(min-width:1200px) {
+  .productosDestacados .contenedorDeProductDestac{
+    grid-template-columns: repeat(5,20%);
+  }
+  .contenedorDeProductDestac{
+    width: 1200px;
+  }
+  .pd__columna{
+    margin: 20px;
+}
+
+@media(min-width:1200px) {
+  .contenedorDeProductDestac{
+    width: 1200px;
+  }
+}
+
+.textoProDectacados{
+  text-align: center;
+}
+
+@media(max-width:519px) {
+  h2{
+    text-align: center;
+  }
+}
+
+.container-fluid .logo{
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
 }

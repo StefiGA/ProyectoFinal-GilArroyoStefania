@@ -4,72 +4,230 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="En esta sección se puede ver todas las plantas disponibles en nuestra web.">
-    <meta name="keywords" content="PLANTAS, INTERIOR, EXTERIOR, CACTUS, MEDICINALES, HUERTA, AROMATICAS">
-    <title>Tabla</title>
+    <meta name="description" content="Este es un sitio web donde encontrarás todo tipo de plantas, y articulos de jardinería que necesitas para tu hogar.">
+    <meta name="keywords" content="PLANTAS, INTERIOR, EXTERIOR, CACTUS, MEDICINALES, HUERTA, AROMATICAS, MACETAS">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <title>Plantas</title>
     <link rel="stylesheet" href="./css/estilo.css">
     <link rel="shortcut icon" href="./Imagenes/favicon.jpg">
 </head>
 
-<!--Acá comienza la tabla-->
-
 <body>
-    <header>
-        <h1>Plantas</h1>
+
+    <header> 
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ddf7d6;">
+            <div class="container-fluid">
+                <a class="wow animate__animated animate__bounce logo" href="index.html" target="_blank"> Siempre Verde</a> 
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="menuNav wow animate__animated animate__rotateInDownLeft">
+
+                        <li class="nav-item dropdown"> <!--Sección 1-->
+                            <a class="nav-link dropdown-toggle" href="plantas.html" target="_blank" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Plantas</a>
+
+                            <ul class="subMenu1 dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li> <a class="dropdown-item" href="">Plantas Exterior</a></li>
+                                <li> <a class="dropdown-item" href="">Plantas Interior</a></li>
+                            </ul>
+                        </li>
+            
+                        <li class="nav-item"> <!--Sección 2-->
+                            <a class="nav-link" href="macetas.html" target="_blank">Macetas</a>
+                        </li>
+            
+                        <li class="nav-item"> <!--sección 3-->
+                            <a class="nav-link" href="articulosdejardineria.html" target="_blank">Artículos de Jardinería</a>
+                        </li>
+            
+                        <li class="nav-item"> <!--sección 4-->
+                            <a class="nav-link" href="quienessomos.html" target="_blank">Quienes Somos</a>
+                        </li>
+            
+                        <li class="nav-item"> <!--sección 5-->
+                            <a class="nav-link" href="contacto.html" target="_blank">Contacto</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+        </nav>
+
     </header>
-    <main>
 
-        <section>
-    <table border=1 cellpadding=10px cellspacing=5px> 
-        <tr>
-            <th>Nombre</th>
-            <th>Tipo</th>
-            <th>Ubicación</th>
-            <th>Follaje</th>
-            <th>Significado</th>
-        </tr>
+    <div>
+        <h2 class="tituloMacetas animate__animated animate__zoomInDown">Plantas</h2>
+    </div>
 
-        <tr>
-            <td>Betula</td>
-            <td>Exterior</td>
-            <td>Pleno sol o media sombra, en suelos ricos en humus, con humedad regular y buen drenaje. Reparo del viento: normal. Resisten fríos</td>
-            <td>Caduco, leve coloración amarilla en otoño, corteza blanca.</td>
-            <td>Plantar tres juntos representa amor, salud y dinero.</td>
-        </tr>
+    <section class="personas">
 
-        <tr>
-            <td>Lavandula</td>
-            <td>Exterior</td>
-            <td>Pleno sol, en suelos fértiles y muy bien drenados. Resistentes a inviernos fríos y frente marino. Son indispensables períodos secos entre riego y riego. Nota: viven bien en maceta.Podar todos los años.</td>
-            <td>Perenne, verde plateado. Flor: azul violaceo en espigas altas, y perfumadas. En verano.</td>
-            <td> Representa: 
-                <br> <br>
+        <div class="contenedor">
 
-                    <li>Frescura</li>
-                    <li>Pureza</li>
-                    <li>Silencio</li>
-                    <li>Calma</li> <br>
-                
-            Por lo que es una flor perfecta para la decoración de muchos espacios, creando ambientes llenos de paz. 
-            </td>
-        </tr>
+            <article class="persona__columna">
+                <img src="./Imagenes/producto1.jpg" alt="foto de producto maceta con planta">
+                <h4>Producto prueba 1</h4>
+                <p>$699</p>
+                <p> 3 cuotas sin interés</p>
+            </article>
 
-        <tr>
-            <td>Orquidea</td>
-            <td>Interior</td>
-            <td>En lugar reparado evitando el sol, temperatura minima 13 grados, riego moderado. </td>
-            <td>A menudo es marrón profundo aterciopelado con nervaduras rojas que corren paralelas al centro de la hoja</td>
-            <td>Tiene un significado de belleza, admiración, justicia y sabiduría.</td>
-        </tr>
+            <article class="persona__columna">
+                <img src="./Imagenes/producto1.jpg" alt="foto de producto maceta con planta">
+                <h4>Producto prueba 1</h4>
+                <p>$699</p>
+                <p> 3 cuotas sin interés</p>
+            </article>
 
-    </table>
+            <article class="persona__columna">
+                <img src="./Imagenes/producto1.jpg" alt="foto de producto maceta con planta">
+                <h4>Producto prueba 1</h4>
+                <p>$699</p>
+                <p> 3 cuotas sin interés</p>
+            </article>
 
-</section>
+            <article class="persona__columna">
+                <img src="./Imagenes/producto1.jpg" alt="foto de producto maceta con planta">
+                <h4>Producto prueba 1</h4>
+                <p>$699</p>
+                <p> 3 cuotas sin interés</p>
+            </article>
 
+            <article class="persona__columna">
+                <img src="./Imagenes/producto1.jpg" alt="foto de producto maceta con planta">
+                <h4>Producto prueba 1</h4>
+                <p>$699</p>
+                <p> 3 cuotas sin interés</p>
+            </article>
 
-    </main>
+            <article class="persona__columna">
+                <img src="./Imagenes/producto1.jpg" alt="foto de producto maceta con planta">
+                <h4>Producto prueba 1</h4>
+                <p>$699</p>
+                <p> 3 cuotas sin interés</p>
+            </article>
+
+            <article class="persona__columna">
+                <img src="./Imagenes/producto1.jpg" alt="foto de producto maceta con planta">
+                <h4>Producto prueba 1</h4>
+                <p>$699</p>
+                <p> 3 cuotas sin interés</p>
+            </article>
+
+            <article class="persona__columna">
+                <img src="./Imagenes/producto1.jpg" alt="foto de producto maceta con planta">
+                <h4>Producto prueba 1</h4>
+                <p>$699</p>
+                <p> 3 cuotas sin interés</p>
+            </article>
+
+            <article class="persona__columna">
+                <img src="./Imagenes/producto1.jpg" alt="foto de producto maceta con planta">
+                <h4>Producto prueba 1</h4>
+                <p>$699</p>
+                <p> 3 cuotas sin interés</p>
+            </article>
+
+            <article class="persona__columna">
+                <img src="./Imagenes/producto1.jpg" alt="foto de producto maceta con planta">
+                <h4>Producto prueba 1</h4>
+                <p>$699</p>
+                <p> 3 cuotas sin interés</p>
+            </article>
+
+            <article class="persona__columna">
+                <img src="./Imagenes/producto1.jpg" alt="foto de producto maceta con planta">
+                <h4>Producto prueba 1</h4>
+                <p>$699</p>
+                <p> 3 cuotas sin interés</p>
+            </article>
+
+            <article class="persona__columna">
+                <img src="./Imagenes/producto1.jpg" alt="foto de producto maceta con planta">
+                <h4>Producto prueba 1</h4>
+                <p>$699</p>
+                <p> 3 cuotas sin interés</p>
+            </article>
+
+        </div>
+
+    </section>
+
+        <!--Footer-->
+        <footer class="pie-pagina">
+
+            <div class="grupo-1">
+    
+                <div class="box">
+                    <h5><b>Medios de pagos</b></h5>
+                    <div class="footer-mediosdepagos">
+                        <img src="https://img.icons8.com/color-glass/50/000000/visa.png"/>
+                        <img src="https://img.icons8.com/color/50/000000/mastercard.png"/>
+                        <img src="https://img.icons8.com/color/50/000000/amex.png"/>
+                        <img src="https://img.icons8.com/color/48/000000/mercado-pago.png"/>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <h5><b>Contacto</b></h5>
+                    <div class="footer-contacto">
+                        <div class="row">
+                            <img src="https://img.icons8.com/ios-glyphs/30/000000/phone--v1.png"/>
+                            <label>2235874652</label>
+                        </div>
+        
+                        <div class="row">
+                            <img src="https://img.icons8.com/material-outlined/24/000000/mail.png"/>
+                            <label>hola@siempreverde.com.ar</label>
+                        </div>
+        
+                        <div class="row">
+                            <img src="https://img.icons8.com/ios-filled/50/000000/worldwide-location--v2.png"/>
+                            <label>Mar del plata- Ruta 11- Kilometro 530, Buenos Aires-Argentina.</label>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <h5><b>Seguinos en</b></h5>
+                    <div class="footer-redessociales">
+                        <div class="row">
+                            <a href="https://www.facebok.com/"> <img src="https://img.icons8.com/material-rounded/24/000000/facebook.png" alt="icono Facebook"> </a>
+                        </div>
+                        <div class="row">
+                            <a href="https:/www.instagram.com/"> <img src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png" alt="icono Instagram"> </a>
+                        </div>
+                        <div class="row">
+                            <a href="https:/www.twitter.com/"> <img src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png" alt="icono Twitter"> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="grupo-2">
+                <small> © COPYRIGHT <b>Siempre Verde</b> - 2021 TODOS LOS DERECHOS RESERVADOS. Creado by: <b>GRANDPRIX</b>-Desarrollo web. | DEFENSA DE LAS Y LOS CONSUMIDORES PARA RECLAMOS INGRESE <a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario" target="_blank"> <b>AQUÍ.</b></a></small>
+            </div>
+    
+        </footer>
     
 </body>
+
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+
 </html>
 
 

@@ -292,17 +292,8 @@ main .imagenesDeProductos div .precio {
   .productosDestacados .contenedorDeProductDestac{
     grid-template-columns: repeat(5,20%);
   }
-  .contenedorDeProductDestac{
-    width: 1200px;
-  }
   .pd__columna{
     margin: 20px;
-}
-
-@media(min-width:1200px) {
-  .contenedorDeProductDestac{
-    width: 1200px;
-  }
 }
 
 .textoProDectacados{
@@ -311,7 +302,7 @@ main .imagenesDeProductos div .precio {
 
 @media(max-width:520px) {
   .productosDestacados .contenedorDeProductDestac{
-    grid-template-columns: repeat(1,80%);
+    grid-template-columns: repeat(1,40%);
   }
 }
 

@@ -309,9 +309,9 @@ main .imagenesDeProductos div .precio {
   text-align: center;
 }
 
-@media(max-width:519px) {
-  h2{
-    text-align: center;
+@media(max-width:520px) {
+  .productosDestacados .contenedorDeProductDestac{
+    grid-template-columns: repeat(1,80%);
   }
 }
 

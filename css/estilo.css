@@ -261,7 +261,19 @@ main .imagenesDeProductos div .precio {
 }
 
 .productosDestacados .contenedorDeProductDestac .pd__columna img{
-  width: 100%;
+  width: 80%;
+  margin-top: 20px;
+}
+
+.container-fluid .logo{
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+.textoProDectacados{
+  text-align: center;
+  margin-top: 10px;
 }
 
 .pd__columna{
@@ -278,13 +290,13 @@ main .imagenesDeProductos div .precio {
 
 @media(min-width:520px) {
   .productosDestacados .contenedorDeProductDestac{
-    grid-template-columns: repeat(2,50%);
+    grid-template-columns: repeat(2,40%);
   }
 }
 
 @media(min-width:728px) {
   .productosDestacados .contenedorDeProductDestac{
-    grid-template-columns: repeat(3,33.3%);
+    grid-template-columns: repeat(3,50%);
   }
 }
 
@@ -296,18 +308,9 @@ main .imagenesDeProductos div .precio {
     margin: 20px;
 }
 
-.textoProDectacados{
-  text-align: center;
-}
-
 @media(max-width:520px) {
   .productosDestacados .contenedorDeProductDestac{
     grid-template-columns: repeat(1,40%);
   }
 }
 
-.container-fluid .logo{
-  list-style-type: none;
-  text-decoration: none;
-  color: black;
-}

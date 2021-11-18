@@ -381,7 +381,7 @@ textarea{
   max-width: 500px;
 }
 
-@media(max-width:520px) {
+@media(max-width:480px) {
   .contenedorFormulario{
     width: 100%;
   }

@@ -316,10 +316,7 @@ main .imagenesDeProductos div .precio {
 
 @media(max-width:520px) {
   .productosDestacados .contenedorDeProductDestac{
-    grid-template-columns: repeat(1,40%);
-  }
-  form{
-    width: 100%;
+    grid-template-columns: repeat(1,100%);
   }
 }
 
@@ -382,4 +379,10 @@ textarea{
   min-height: 100px;
   max-height: 300px;
   max-width: 500px;
+}
+
+@media(max-width:520px) {
+  .contenedorFormulario{
+    width: 100%;
+  }
 }

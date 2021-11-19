@@ -381,15 +381,6 @@ textarea{
   max-width: 500px;
 }
 
-#boton{
-  background: #88C86B;
-  color: black;
-  padding: 20px;
-}
-
-#boton:hover{
-  cursor: pointer;
-}
 
 
 @media(max-width:480px) {

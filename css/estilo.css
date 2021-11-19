@@ -259,6 +259,13 @@ main .imagenesDeProductos div .precio {
   }
 }
 
+/* css plantas html*/
+
+.personas .contenedor .persona__columna h4{
+  font-family: 'EB Garamond', serif;
+  font-weight: bold;
+}
+
 /*index productos destacados*/
 
 .contenedorDeProductDestac{

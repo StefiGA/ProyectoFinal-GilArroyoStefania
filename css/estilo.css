@@ -473,3 +473,36 @@ textarea{
   }
 }
 
+@media(min-width:521px) and (max-width:1200px){
+  .containerMainQuienesSomos{
+    display: grid;
+    grid-template-areas: "div"
+                        "section";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    margin-top: 10px;
+    grid-gap:1rem;
+  }
+  .fotoDeQuienesSomos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .fotoDeQuienesSomos img{
+    grid-area: div;
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+  
+  }
+  .parrafoDeQuienesSomos{
+    font-size: 15px;
+    text-align: center;
+  }
+  .divQuienesSomos h2{
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+

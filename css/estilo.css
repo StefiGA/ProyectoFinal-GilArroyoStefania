@@ -83,6 +83,7 @@ main .container .carousel-inner{
 div .tituloMacetas {
   text-align: center;
   margin-top: 20px;
+  font-family: 'EB Garamond', serif;
 }
 
 main .imagenesDeProductos {
@@ -279,6 +280,8 @@ main .imagenesDeProductos div .precio {
 .textoProDectacados{
   text-align: center;
   margin-top: 10px;
+  font-family: 'EB Garamond', serif;
+  font-size: 40px;
 }
 
 .pd__columna{
@@ -286,6 +289,11 @@ main .imagenesDeProductos div .precio {
   text-align: center;
   align-items: center;
   background-color: #ddf7d6;
+  border-radius: 20px;
+}
+
+.pd__columna h4{
+  margin-top: 5px;
 }
 
 
@@ -336,6 +344,7 @@ main .imagenesDeProductos div .precio {
   margin: 0;
   margin-bottom: 30px;
   color: black;
+  font-family: 'EB Garamond', serif;
 }
 
 .contenedorFormulario{

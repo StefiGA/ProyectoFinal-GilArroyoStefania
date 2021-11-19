@@ -13,6 +13,7 @@ header .logo {
   font-family: "Dancing Script", cursive;
   font-size: 50px;
 }
+
 header nav .menuNav {
   margin: 20px;
   padding: 0;
@@ -402,3 +403,65 @@ textarea{
     width: 100%;
   }
 }
+
+/*CSS de quienes somos html*/
+
+.divQuienesSomos h2{
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+  margin-top: 5px;
+}
+
+.containerMainQuienesSomos{
+  width: 80%;
+  margin: auto;
+  background: rgba(179, 252, 173, 0.2);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-areas: "div section"
+                      "div section";
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-gap:1rem;
+
+}
+
+.parrafoDeQuienesSomos{
+  grid-area: section;
+  margin-top: 20px;
+}
+
+.fotoDeQuienesSomos{
+  grid-area: div;
+  margin: 10px;
+}
+
+@media(max-width:520px) {
+  .containerMainQuienesSomos{
+    display: grid;
+    grid-template-areas: "div"
+                        "section";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    margin-top: 10px;
+    grid-gap:1rem;
+  }
+  .fotoDeQuienesSomos{
+    grid-area: div;
+    width: 10%;
+  }
+  .parrafoDeQuienesSomos{
+    font-size: 10px;
+    text-align: center;
+  }
+  .divQuienesSomos h2{
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+

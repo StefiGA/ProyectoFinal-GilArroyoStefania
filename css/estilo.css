@@ -264,6 +264,7 @@ main .imagenesDeProductos div .precio {
 .personas .contenedor .persona__columna h4{
   font-family: 'EB Garamond', serif;
   font-weight: bold;
+  font-size: 30px;
 }
 
 /*index productos destacados*/

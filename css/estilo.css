@@ -435,7 +435,7 @@ textarea{
   margin-top: 20px;
 }
 
-.fotoDeQuienesSomos{
+.fotoDeQuienesSomos img{
   grid-area: div;
   margin: 10px;
 }
@@ -450,12 +450,12 @@ textarea{
     margin-top: 10px;
     grid-gap:1rem;
   }
-  .fotoDeQuienesSomos{
+  .fotoDeQuienesSomos img{
     grid-area: div;
-    width: 10%;
+    width: 100%;
   }
   .parrafoDeQuienesSomos{
-    font-size: 10px;
+    font-size: 15px;
     text-align: center;
   }
   .divQuienesSomos h2{

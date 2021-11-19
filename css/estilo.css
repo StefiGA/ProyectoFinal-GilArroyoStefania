@@ -450,9 +450,17 @@ textarea{
     margin-top: 10px;
     grid-gap:1rem;
   }
+  .fotoDeQuienesSomos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
   .fotoDeQuienesSomos img{
     grid-area: div;
     width: 100%;
+    margin: auto;
+    margin-top: 5px;
+  
   }
   .parrafoDeQuienesSomos{
     font-size: 15px;

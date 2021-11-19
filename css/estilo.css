@@ -381,6 +381,18 @@ textarea{
   max-width: 500px;
 }
 
+#boton{
+  background: #c6c6c6;
+  color: black;
+  padding: 10px;
+}
+
+#boton:hover{
+  background: #828282;
+  color: black;
+  cursor: pointer;
+}
+
 
 
 @media(max-width:480px) {

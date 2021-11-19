@@ -373,7 +373,6 @@ input, textarea {
   box-sizing: border-box;
   font-size: 17px;
   border: none;
-  text-align: center;
   align-items: center;
   justify-content: center;
 }

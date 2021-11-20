@@ -218,6 +218,7 @@ main .imagenesDeProductos div .precio {
 
 .personas .contenedor .persona__columna img{
   width: 100%;
+  border-radius: 20px;
 }
 
 .persona__columna{
@@ -297,6 +298,10 @@ main .imagenesDeProductos div .precio {
   text-align: center;
   align-items: center;
   background-color: #ddf7d6;
+  border-radius: 40px;
+}
+
+.pd__columna img{
   border-radius: 20px;
 }
 

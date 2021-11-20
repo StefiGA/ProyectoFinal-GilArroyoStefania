@@ -221,6 +221,12 @@ main .imagenesDeProductos div .precio {
   border-radius: 20px;
 }
 
+.personas .contenedor .persona__columna img:hover{
+  transform: scale(1.1,1.1);
+}
+
+
+
 .persona__columna{
   margin: 5px;
   text-align: center;
@@ -304,6 +310,11 @@ main .imagenesDeProductos div .precio {
 .pd__columna img{
   border-radius: 20px;
 }
+
+.pd__columna img:hover{
+  transform: scale(1.4,1.4);
+}
+
 
 .pd__columna h4{
   margin-top: 5px;

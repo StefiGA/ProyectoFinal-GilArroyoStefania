@@ -32,7 +32,7 @@ header nav .menuNav li a {
   display: block;
 }
 header nav .menuNav li a:hover {
-  background-color: white;
+  background-color:#9fc58d;
   line-height: 30px;
   border-radius: 100%;
 }

@@ -51,6 +51,7 @@ header nav ul li:hover ul {
 header nav .subMenu1 {
   margin: 0px;
   padding: 0px;
+  z-index: 2;
 }
 
 main .container .carousel-inner img{

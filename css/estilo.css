@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/*sccs del index.html*/
+/*index.html*/
 header {
   width: 100%;
   text-align: center;
@@ -13,7 +13,6 @@ header .logo {
   font-family: "Dancing Script", cursive;
   font-size: 50px;
 }
-
 
 header nav .menuNav {
   margin: 20px;
@@ -82,7 +81,7 @@ main .container .carousel-inner{
   width: 300px;
 }
 
-/*scss de macetas.html*/
+/*macetas.html*/
 div .tituloMacetas {
   text-align: center;
   margin-top: 20px;
@@ -211,7 +210,7 @@ main .imagenesDeProductos div .precio {
 
 }
 
-/*css de macetas html*/
+/*macetas html*/
 
 .contenedor{
   width: 100%;
@@ -228,15 +227,12 @@ main .imagenesDeProductos div .precio {
   transform: scale(1.1,1.1);
 }
 
-
-
 .persona__columna{
   margin: 5px;
   text-align: center;
   align-items: center;
   background-color: #ddf7d6;
 }
-
 
 .personas .contenedor{
   display: grid;
@@ -269,7 +265,7 @@ main .imagenesDeProductos div .precio {
   }
 }
 
-/* css plantas html*/
+/*plantas html*/
 
 .personas .contenedor .persona__columna h4{
   font-family: 'EB Garamond', serif;
@@ -277,7 +273,7 @@ main .imagenesDeProductos div .precio {
   font-size: 30px;
 }
 
-/*index productos destacados*/
+/*productos destacados*/
 
 .contenedorDeProductDestac{
   width: 100%;
@@ -356,7 +352,7 @@ main .imagenesDeProductos div .precio {
   }
 }
 
-/*css de contacto hml Formulario*/
+/*contacto formulario*/
 
 .bodyContacto {
   background-image: url(../Imagenes/Fondo\ contacto.png);
@@ -432,15 +428,13 @@ textarea{
   cursor: pointer;
 }
 
-
-
 @media(max-width:480px) {
   .contenedorFormulario{
     width: 100%;
   }
 }
 
-/*CSS de quienes somos html*/
+/*quienes somos html*/
 
 .divQuienesSomos h2{
   text-align: center;

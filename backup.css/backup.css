@@ -1,302 +1,538 @@
-/*Primeros estilos de CSS*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-.mainIndex{
-    background-color:#a7ca7d;
-  }
-  
-  .footerFondo{
-    background-color: black;
-    margin: 20px;
-    padding: 0;
-    width: 100%;
-  }
-  
-  .footerColorTexto{
-    color:white
-  }
-  
-  
-  p{
-    color: rgb(7, 6, 6);
-  }
-  
-  
-  th {
-    background-color:#cccccc;
-    border: 1px solid;
-   }
-  
-  
-  
-  /*CSS de la pagina quiénes somos actualizado con grid*/
-  
-  .BodyQuienesSomos{
-    background-color:#e9fcd2;
-  }
-  
-  .HeaderQuienesSomos{
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
-  }
-  
-  .estiloTexto{
-    font-family: 'Libre Franklin', sans-serif;
-  }
-  
-  .formatoTexto{
-    line-height: 1,6;
-    letter-spacing: 1px;
-    word-spacing: 2px;
-  }
-  
-  .containerMain{
-    display: grid;
-    grid-template-areas: "div section"
-                         "div section";
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    margin-top: 50px;
-    grid-gap:1rem;
-    
-  }
-  
-  .estiloTexto{
-    grid-area: section;
-  }
-  
-  .classDiv{
-    grid-area: div;
-    margin: 10px;
-  
-  }
-  
-  /*media queries*/
-    @media only screen and (max-width: 834px) and (min-width: 415px) {
-      .BodyQuienesSomos{ 
-        background-color: red;
-      }
-  
-      .containerMain{
-        display: grid;
-        grid-template-areas: "div"
-                             "section";
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        margin-top: 10px;
-        grid-gap:1rem;
-        
-      }
-  
-      .classDiv{
-        width: 50%;
-      }
-  
-      p{
-        font-size: 15px;
-        text-align: center;
-      }
-  
-      .HeaderQuienesSomos{
-        font-family: 'Source Sans Pro', sans-serif;
-        text-align: center;
-      }
-  
-    }
-  
-    @media (max-width: 414px) {
-      .containerMain{
-        display: grid;
-        grid-template-areas: "div"
-                             "section";
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        margin-top: 10px;
-        grid-gap:1rem;
-      }
-  
-    .BodyQuienesSomos{ 
-      background-color:green;
-    }
-  
-    p{
-      font-size: 25px;
-      text-align: center;
-    }
-  
-    .HeaderQuienesSomos{
-      font-family: 'Source Sans Pro', sans-serif;
-      text-align: center;
-    }
-  
-  }
-  
-  /*CSS de barra de navegación y header*/
-  
-  header{
-    width: 100%;
-    text-align: center;
-  }
-  
-  .logo{
-    font-family: 'Dancing Script', cursive;
-    font-size: 50px
-  }
-  
-  .menuNav{
-    margin: 20px; /*hace que se centre el menu*/
-    padding: 0; /*para eliminar el especio entre la linea y el borde*/
-    list-style-type: none;
-    background-color: rgb(221, 247, 214);
-    width: 100%;
-    
-  
-  }
-  
-  .menuNav li{
-    margin: 15px;
-    display: inline-block;
-    text-align: center;
-  
-  }
-  
-  .menuNav li a{
-    text-decoration: none; 
-    color: black;
-    display: block;
-  }
-  
-  .menuNav li a:hover{
-    background-color: white;
-    border-radius: 100%;
-  }
-  
-  ul ul{
-    position: absolute;
-    display: none;
-  }
-  
-  
-  a{
-    text-decoration: none;
-  }
-  
-  ul li:hover ul{
-    background-color: rgb(221, 247, 214);
+/*index.html*/
+header {
+  width: 100%;
+  text-align: center;
+}
+header .logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+}
+
+header nav .menuNav {
+  margin: 20px;
+  padding: 0;
+  list-style-type: none;
+  background-color: #ddf7d6;
+  width: 100%;
+}
+header nav .menuNav li {
+  margin: 15px;
+  display: inline-block;
+  text-align: center;
+}
+header nav .menuNav li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+header nav .menuNav li a:hover {
+  background-color:#9fc58d;
+  line-height: 30px;
+  border-radius: 100%;
+}
+header nav ul ul {
+  position: absolute;
+  display: none;
+}
+header nav a {
+  text-decoration: none;
+}
+header nav ul li:hover ul {
+  background-color: #ddf7d6;
+  display: flex;
+  flex-direction: column;
+}
+
+header nav .subMenu1 {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 1;
+}
+
+main .container .carousel-inner img{
+  width: 100%;
+}
+
+main .container .carousel-inner{
+  height: 200px;
+}
+
+.productosDestacados {
+  text-align: center;
+}
+
+.containerGrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin-top: 2px;
+}
+.containerGrid .imagenProductosDestacados {
+  display: flex;
+  flex: flex wrap;
+  margin: 20px;
+  padding: 0;
+  width: 300px;
+}
+
+/*macetas.html*/
+div .tituloMacetas {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'EB Garamond', serif;
+}
+
+main .imagenesDeProductos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .imagenesDeProductos div .imagenUno a img {
+  margin: 10px;
+  width: 100px;
+  padding: 60px;
+  border: none;
+}
+main .imagenesDeProductos div .imagenDos a img {
+  margin: 10px;
+  width: 250px;
+  padding: 60px;
+  border: none;
+}
+main .imagenesDeProductos div .imagenTres a img {
+  margin: 10px;
+  width: 250px;
+  padding: 60px;
+  border: none;
+}
+main .imagenesDeProductos div .divMainMacetas {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+main .imagenesDeProductos div .imgDivMacetas {
+  width: 25em;
+}
+main .imagenesDeProductos div .textoNombre {
+  font-family: "Fresca", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+main .imagenesDeProductos div .precio {
+  font-family: "Fresca", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}/*# sourceMappingURL=estilo.css.map */
+
+/*Footer*/
+
+.pie-pagina{
+  width: 100%;
+  background-color: #ddf7d6;
+}
+
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+  justify-content: space-between;
+}
+
+.pie-pagina .grupo-1 .box .footer-redessociales .row{
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.pie-pagina .grupo-1 .box .footer-contacto .row img{
+  width: 25px;
+  height: 25px;
+
+}
+
+.pie-pagina .grupo-1 .box .footer-redessociales .row img{
+  width: 25px;
+  height: 25px;
+  transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .box .footer-redessociales .row img:hover{
+  background-color: #88C86B;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+.grupo-2{
+  text-align: center;
+}
+
+@media screen and (max-width:812px){
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    margin-bottom: 30px;
+    padding: 10px 0px;
     display: flex;
-    flex-direction: column;
-  }
-  
-  .subMenu1{
-    z-index: 1;
-    margin: 0px;
-    padding: 0px;
-  }
-  
-  
-  .imagenCarrusel{
-    margin: 20px;
-    padding: 0;
-    width: 100%;
-    left: 500px;
-  }
-  
-  .productosDestacados{
-    text-align: center;
-  }
-  
-  
-  /*grid en el index*/
-  
-  .containerGrid{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    margin-top: 2px;
-  }
-  
-  .imagenProductosDestacados{
-    display: flex;
-    flex: flex wrap;
-    margin: 20px;
-    padding: 0;
-    width: 300px;
-  
-  }
-  
-  /*Categoria Macetas*/
-  
-  .tituloMacetas{
-    text-align: center;
-  }
-  
-  .imagenUno a img{
-    margin: 10px;
-    width: 100px;
-    padding: 60px;
-    border: none;
-  }
-  
-  .textoNombre{
-    font-family:'Fresca', sans-serif;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .precio{
-    font-family:'Fresca', sans-serif;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  
-  .imagenDos a img{
-    margin: 10px;
-    width: 250px;
-    padding: 60px;
-    border: none;
-  
-  }
-  
-  .imagenTres a img{
-    margin: 10px;
-    width: 250px;
-    padding: 60px;
-    border: none;
-  }
-  
-  .imagenesDeProductos{
-    display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
   }
-  
-  .imgDivMacetas{
-    width: 25em;
-  }
-  
-  .divMainMacetas{
-    width: min-content;
-  }
-  
-  /*Articulos de Jardineria*/
-  
-  .imgDivArticulos{
-    width: 25em;
-  }
-  
-  .divMainArticulos{
-    width: min-content;
-  }
-  
-  /*Animaciones y transformaciones */
-  
-  .fotoProductoInicio:hover{
-    transform: scale(1.1,1.1);
-  }
-  
-  /*carusel*/
-  
-  .container{
-    width: 100%;
+
+  .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
+  .box{
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .box .footer-redessociales .row a img{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+}
+
+/*macetas html*/
+
+.contenedor{
+  width: 100%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.personas .contenedor .persona__columna img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.personas .contenedor .persona__columna img:hover{
+  transform: scale(1.1,1.1);
+}
+
+.persona__columna{
+  margin: 5px;
+  text-align: center;
+  align-items: center;
+  background-color: #ddf7d6;
+}
+
+.personas .contenedor{
+  display: grid;
+}
+
+@media(min-width:520px) {
+  .personas .contenedor{
+    grid-template-columns: repeat(2,50%);
+  }
+}
+
+@media(min-width:728px) {
+  .personas .contenedor{
+    grid-template-columns: repeat(3,33.3%);
+  }
+}
+
+@media(min-width:1024px) {
+  .personas .contenedor{
+    grid-template-columns: repeat(4,25%);
+  }
+  .contenedor{
+    width: 1024px;
+  }
+}
+
+@media(min-width:1200px) {
+  .contenedor{
+    width: 1200px;
+  }
+}
+
+/*plantas html*/
+
+.personas .contenedor .persona__columna h4{
+  font-family: 'EB Garamond', serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/*productos destacados*/
+
+.contenedorDeProductDestac{
+  width: 100%;
+  margin: auto;
+}
+
+.productosDestacados .contenedorDeProductDestac .pd__columna img{
+  width: 80%;
+  margin-top: 20px;
+}
+
+.container-fluid .logo{
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+.textoProDectacados{
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'EB Garamond', serif;
+  font-size: 40px;
+}
+
+.pd__columna{
+  margin: 5px;
+  text-align: center;
+  align-items: center;
+  background-color: #ddf7d6;
+  border-radius: 40px;
+}
+
+.pd__columna img{
+  border-radius: 20px;
+}
+
+.pd__columna img:hover{
+  transform: scale(1.4,1.4);
+}
+
+
+.pd__columna h4{
+  margin-top: 5px;
+}
+
+
+.productosDestacados .contenedorDeProductDestac{
+  display: grid;
+}
+
+@media(min-width:520px) {
+  .productosDestacados .contenedorDeProductDestac{
+    grid-template-columns: repeat(2,40%);
+  }
+}
+
+@media(min-width:728px) {
+  .productosDestacados .contenedorDeProductDestac{
+    grid-template-columns: repeat(3,50%);
+  }
+}
+
+@media(min-width:1200px) {
+  .productosDestacados .contenedorDeProductDestac{
+    grid-template-columns: repeat(5,20%);
+  }
+  .pd__columna{
+    margin: 20px;
+  }
+
+}
+
+@media(max-width:520px) {
+  .productosDestacados .contenedorDeProductDestac{
+    grid-template-columns: repeat(1,100%);
+  }
+}
+
+/*contacto formulario*/
+
+.bodyContacto {
+  background-image: url(../Imagenes/Fondo\ contacto.png);
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.Contacto{
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 30px;
+  color: black;
+  font-family: 'EB Garamond', serif;
+}
+
+.contenedorFormulario{
+  width: 450px;
+  margin: auto;
+  background: rgba(0,0,0,0.2);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.contenedorFormulario .términosycondiciones{
+  color: black;
+  list-style-type: none;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.fechadeNacimiento{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+  align-items: center;
+  justify-content: center;
+}
+
+textarea{
+  min-height: 100px;
+  max-height: 300px;
+  max-width: 500px;
+}
+
+#boton{
+  background: #c6c6c6;
+  color: black;
+  padding: 10px;
+}
+
+#boton:hover{
+  background: #828282;
+  color: black;
+  cursor: pointer;
+}
+
+@media(max-width:480px) {
+  .contenedorFormulario{
+    width: 100%;
+  }
+}
+
+/*quienes somos html*/
+
+.divQuienesSomos h2{
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+  margin-top: 5px;
+}
+
+.containerMainQuienesSomos{
+  width: 80%;
+  margin: auto;
+  background: rgba(179, 252, 173, 0.2);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-areas: "div section"
+                      "div section";
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-gap:1rem;
+
+}
+
+.parrafoDeQuienesSomos{
+  grid-area: section;
+  margin-top: 20px;
+}
+
+.fotoDeQuienesSomos img{
+  grid-area: div;
+  margin: 10px;
+}
+
+@media(max-width:520px) {
+  .containerMainQuienesSomos{
+    display: grid;
+    grid-template-areas: "div"
+                        "section";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    margin-top: 10px;
+    grid-gap:1rem;
+  }
+  .fotoDeQuienesSomos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .fotoDeQuienesSomos img{
+    grid-area: div;
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+  
+  }
+  .parrafoDeQuienesSomos{
+    font-size: 15px;
+    text-align: center;
+  }
+  .divQuienesSomos h2{
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+@media(min-width:521px) and (max-width:1200px){
+  .containerMainQuienesSomos{
+    display: grid;
+    grid-template-areas: "div"
+                        "section";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    margin-top: 10px;
+    grid-gap:1rem;
+  }
+  .fotoDeQuienesSomos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .fotoDeQuienesSomos img{
+    grid-area: div;
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+  
+  }
+  .parrafoDeQuienesSomos{
+    font-size: 15px;
+    text-align: center;
+  }
+  .divQuienesSomos h2{
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    text-align: center;
+  }
+}
 

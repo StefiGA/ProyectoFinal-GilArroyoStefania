@@ -1,0 +1,527 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header {
+	width: 100%;
+	text-align: center;
+	.logo {
+		font-family: "Dancing Script", cursive;
+		font-size: 50px;
+	}
+	nav {
+		.menuNav {
+			margin: 20px;
+			padding: 0;
+			list-style-type: none;
+			background-color: #ddf7d6;
+			width: 100%;
+			li {
+				margin: 15px;
+				display: inline-block;
+				text-align: center;
+				a {
+					text-decoration: none;
+					color: black;
+					display: block;
+					&:hover {
+						background-color: #9fc58d;
+						line-height: 30px;
+						border-radius: 100%;
+					}
+				}
+			}
+		}
+		ul {
+			ul {
+				position: absolute;
+				display: none;
+			}
+			li {
+				&:hover {
+					ul {
+						background-color: #ddf7d6;
+						display: flex;
+						flex-direction: column;
+					}
+				}
+			}
+		}
+		a {
+			text-decoration: none;
+		}
+		.subMenu1 {
+			margin: 0px;
+			padding: 0px;
+			position: relative;
+			z-index: 1;
+		}
+	}
+}
+main {
+	.container {
+		.carousel-inner {
+			img {
+				width: 100%;
+			}
+			height: 200px;
+		}
+	}
+	.imagenesDeProductos {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		div {
+			.imagenUno {
+				a {
+					img {
+						margin: 10px;
+						width: 100px;
+						padding: 60px;
+						border: none;
+					}
+				}
+			}
+			.imagenDos {
+				a {
+					img {
+						margin: 10px;
+						width: 250px;
+						padding: 60px;
+						border: none;
+					}
+				}
+			}
+			.imagenTres {
+				a {
+					img {
+						margin: 10px;
+						width: 250px;
+						padding: 60px;
+						border: none;
+					}
+				}
+			}
+			.divMainMacetas {
+				width: -webkit-min-content;
+				width: -moz-min-content;
+				width: min-content;
+			}
+			.imgDivMacetas {
+				width: 25em;
+			}
+			.textoNombre {
+				font-family: "Fresca", sans-serif;
+				font-weight: bold;
+				text-align: center;
+			}
+			.precio {
+				font-family: "Fresca", sans-serif;
+				font-weight: bold;
+				text-align: center;
+			}
+		}
+	}
+}
+.productosDestacados {
+	text-align: center;
+	.contenedorDeProductDestac {
+		.pd__columna {
+			img {
+				width: 80%;
+				margin-top: 20px;
+			}
+		}
+		display: grid;
+	}
+}
+.containerGrid {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	margin-top: 2px;
+	.imagenProductosDestacados {
+		display: flex;
+		flex: flex wrap;
+		margin: 20px;
+		padding: 0;
+		width: 300px;
+	}
+}
+div {
+	.tituloMacetas {
+		text-align: center;
+		margin-top: 20px;
+		font-family: 'EB Garamond', serif;
+	}
+}
+.pie-pagina {
+	width: 100%;
+	background-color: #ddf7d6;
+	.grupo-1 {
+		width: 100%;
+		max-width: 1200px;
+		margin: auto;
+		margin-top: 40px;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 20px 0px;
+		justify-content: space-between;
+		.box {
+			.footer-redessociales {
+				.row {
+					display: inline-block;
+					width: 45px;
+					height: 45px;
+					line-height: 45px;
+					margin-right: 10px;
+					text-align: center;
+					img {
+						width: 25px;
+						height: 25px;
+						transition: all 300ms ease;
+						&:hover {
+							background-color: #88C86B;
+							line-height: 40px;
+							border-radius: 50%;
+						}
+					}
+				}
+			}
+			.footer-contacto {
+				.row {
+					img {
+						width: 25px;
+						height: 25px;
+					}
+				}
+			}
+		}
+	}
+}
+.grupo-2 {
+	text-align: center;
+}
+.contenedor {
+	width: 100%;
+	margin: auto;
+	margin-top: 20px;
+}
+.personas {
+	.contenedor {
+		.persona__columna {
+			img {
+				width: 100%;
+				border-radius: 20px;
+				&:hover {
+					transform: scale(1.1,1.1);
+				}
+			}
+			h4 {
+				font-family: 'EB Garamond', serif;
+				font-weight: bold;
+				font-size: 30px;
+			}
+		}
+		display: grid;
+	}
+}
+.persona__columna {
+	margin: 5px;
+	text-align: center;
+	align-items: center;
+	background-color: #ddf7d6;
+}
+.contenedorDeProductDestac {
+	width: 100%;
+	margin: auto;
+}
+.container-fluid {
+	.logo {
+		list-style-type: none;
+		text-decoration: none;
+		color: black;
+	}
+}
+.textoProDectacados {
+	text-align: center;
+	margin-top: 10px;
+	font-family: 'EB Garamond', serif;
+	font-size: 40px;
+}
+.pd__columna {
+	margin: 5px;
+	text-align: center;
+	align-items: center;
+	background-color: #ddf7d6;
+	border-radius: 40px;
+	img {
+		border-radius: 20px;
+		&:hover {
+			transform: scale(1.4,1.4);
+		}
+	}
+	h4 {
+		margin-top: 5px;
+	}
+}
+.bodyContacto {
+	background-image: url(../Imagenes/Fondo\ contacto.png);
+	background-size: 100vw 100vh;
+	background-attachment: fixed;
+	margin: 0;
+}
+.Contacto {
+	text-align: center;
+	font-size: 30px;
+	margin: 0;
+	margin-bottom: 30px;
+	color: black;
+	font-family: 'EB Garamond', serif;
+}
+.contenedorFormulario {
+	width: 450px;
+	margin: auto;
+	background: rgba(0,0,0,0.2);
+	padding: 10px 20px;
+	box-sizing: border-box;
+	margin-top: 20px;
+	border-radius: 20px;
+	.términosycondiciones {
+		color: black;
+		list-style-type: none;
+		text-decoration: none;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		font-size: 15px;
+		display: flex;
+		flex-direction: row;
+	}
+}
+.fechadeNacimiento {
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+input {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size: 17px;
+	border: none;
+	align-items: center;
+	justify-content: center;
+}
+textarea {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size: 17px;
+	border: none;
+	align-items: center;
+	justify-content: center;
+	min-height: 100px;
+	max-height: 300px;
+	max-width: 500px;
+}
+#boton {
+	background: #c6c6c6;
+	color: black;
+	padding: 10px;
+	&:hover {
+		background: #828282;
+		color: black;
+		cursor: pointer;
+	}
+}
+.divQuienesSomos {
+	h2 {
+		text-align: center;
+		font-family: "Dancing Script", cursive;
+		font-size: 50px;
+		margin-top: 5px;
+	}
+}
+.containerMainQuienesSomos {
+	width: 80%;
+	margin: auto;
+	background: rgba(179, 252, 173, 0.2);
+	padding: 10px 20px;
+	box-sizing: border-box;
+	margin-top: 30px;
+	border-radius: 20px;
+	display: grid;
+	grid-template-areas: "div section" "div section";
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	grid-gap: 1rem;
+}
+.parrafoDeQuienesSomos {
+	grid-area: section;
+	margin-top: 20px;
+}
+.fotoDeQuienesSomos {
+	img {
+		grid-area: div;
+		margin: 10px;
+	}
+}
+@media screen and (max-width:812px) {
+	.pie-pagina {
+		.grupo-1 {
+			width: 90%;
+			margin-bottom: 30px;
+			padding: 10px 0px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	.row {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	.box {
+		text-align: center;
+		margin-top: 30px;
+		.footer-redessociales {
+			.row {
+				a {
+					img {
+						align-items: center;
+						justify-content: center;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(min-width:520px) {
+	.personas {
+		.contenedor {
+			grid-template-columns: repeat(2,50%);
+		}
+	}
+	.productosDestacados {
+		.contenedorDeProductDestac {
+			grid-template-columns: repeat(2,40%);
+		}
+	}
+}
+@media (min-width:728px) {
+	.personas {
+		.contenedor {
+			grid-template-columns: repeat(3,33.3%);
+		}
+	}
+	.productosDestacados {
+		.contenedorDeProductDestac {
+			grid-template-columns: repeat(3,50%);
+		}
+	}
+}
+@media (min-width:1024px) {
+	.personas {
+		.contenedor {
+			grid-template-columns: repeat(4,25%);
+		}
+	}
+	.contenedor {
+		width: 1024px;
+	}
+}
+@media (min-width:1200px) {
+	.contenedor {
+		width: 1200px;
+	}
+	.productosDestacados {
+		.contenedorDeProductDestac {
+			grid-template-columns: repeat(5,20%);
+		}
+	}
+	.pd__columna {
+		margin: 20px;
+	}
+}
+@media (max-width:520px) {
+	.productosDestacados {
+		.contenedorDeProductDestac {
+			grid-template-columns: repeat(1,100%);
+		}
+	}
+	.containerMainQuienesSomos {
+		display: grid;
+		grid-template-areas: "div" "section";
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+		margin-top: 10px;
+		grid-gap: 1rem;
+	}
+	.fotoDeQuienesSomos {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		img {
+			grid-area: div;
+			width: 100%;
+			margin: auto;
+			margin-top: 5px;
+		}
+	}
+	.parrafoDeQuienesSomos {
+		font-size: 15px;
+		text-align: center;
+	}
+	.divQuienesSomos {
+		h2 {
+			font-family: "Dancing Script", cursive;
+			font-size: 30px;
+			text-align: center;
+		}
+	}
+}
+@media (max-width:480px) {
+	.contenedorFormulario {
+		width: 100%;
+	}
+}
+@media (min-width:521px) and (max-width:1200px) {
+	.containerMainQuienesSomos {
+		display: grid;
+		grid-template-areas: "div" "section";
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+		margin-top: 10px;
+		grid-gap: 1rem;
+	}
+	.fotoDeQuienesSomos {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		img {
+			grid-area: div;
+			width: 100%;
+			margin: auto;
+			margin-top: 5px;
+		}
+	}
+	.parrafoDeQuienesSomos {
+		font-size: 15px;
+		text-align: center;
+	}
+	.divQuienesSomos {
+		h2 {
+			font-family: "Dancing Script", cursive;
+			font-size: 30px;
+			text-align: center;
+		}
+	}
+}

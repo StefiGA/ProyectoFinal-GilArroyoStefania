@@ -16,7 +16,7 @@ const productosDes = [
 	},
 	{
 		id: 2,
-		imagen: "./cover-plantas.jpg",
+		imagen: "./Imagenes/Plantas/Planta-LitleMercury.jpg",
 		alt: "planta verde y rosa de hojas chicas",
 		nombre: "Litle Mercury",
 		tipo: "exterior",
@@ -100,7 +100,7 @@ const productosDes = [
 // se ejecuta al cargarse el html. Imprime todos los objetos
 // del array "productos"
 document.addEventListener("DOMContentLoaded", () => {
-	productos.forEach((prod) => {
+	productosDes.forEach((prod) => {
 		let article = `
         <article id="${prod.id}">
             <img src="${prod.imagen}" alt="${prod.alt}">
@@ -121,7 +121,7 @@ function sumarAlCarrito(event) {
 	// Metodo find devuelve el primer elemento que coincide con la busqueda
 	// buscamos el elemento del array productos que coincida en ID con el
 	// id que trajo el evento
-	const prodSeleccionado = productos.find(
+	const prodSeleccionado = productosDes.find(
 		(p) => p.id === Number(event.target.parentElement.id)
 	);
 	console.log(prodSeleccionado);

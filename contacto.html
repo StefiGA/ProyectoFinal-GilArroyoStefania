@@ -72,15 +72,15 @@
 
     <section class="contenedorFormulario">
 
-        <form action="">
+        <form action="" id="form">
             <h1 class="Contacto wow animate__animated animate__zoomIn"> Contacto </h1>
-            <input type="text" name="nombre" placeholder="Nombre:">
-            <input type="text" name="apellido" placeholder="Apellido:"> 
-            <input type="text" name="teléfono" placeholder="Teléfono:"> 
+            <input type="text" name="nombre" id="nombre-form" placeholder="Nombre:">
+            <input type="text" name="apellido" id="apellido-form"placeholder="Apellido:"> 
+            <input type="text" name="teléfono" id="teléfono-form" placeholder="Teléfono:"> 
             <b class="fechadeNacimiento"><label class for="nacimiento">Fecha de nacimiento:</label></b>
-            <input type="date" name="nacimiento"> 
-            <input type="text" name="email" required placeholder="Email: ¡Déjalo, te prometemos no ser spam!"> 
-            <textarea name="comentario" id="" cols="50" rows="10" placeholder="Escribí tu consulta acá, te responderemos lo más rápido que podamos:"></textarea>
+            <input type="date" name="nacimiento" id="nacimiento-form"> 
+            <input type="text" name="email" id="email-form" required placeholder="Email: ¡Déjalo, te prometemos no ser spam!"> 
+            <textarea name="comentario" id="consulta-form" cols="50" rows="10" placeholder="Escribí tu consulta acá, te responderemos lo más rápido que podamos:"></textarea>
             <input type="submit" value="Enviar" id="boton">
             <input type="reset" value="Limpiar formulario" id="boton">
             
@@ -158,6 +158,8 @@ new WOW().init();
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="js/form.js"></script>
+
 
 </html>
 

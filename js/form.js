@@ -28,7 +28,7 @@ formulario.addEventListener('submit', function(e){
 
 const formulario = $("#form");
 
-$("#formulario").submit(function( event ) {
+$("#form").submit(function( event ) {
 
     let nombre = $("#nombre-form").value;
     console.log(nombre)

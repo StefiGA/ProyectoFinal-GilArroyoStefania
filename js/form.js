@@ -29,6 +29,6 @@ let dataUsuario
 $("#form").submit(function( event ) {
     event.preventDefault()
     dataUsuario = $("#form").serializeArray()
-    alert(`Gracias ${dataUsuario[0].value} por tu consulta`);
+    alert(`Gracias ${dataUsuario[0].value} por tu consulta, nos comunicaremos lo más rápido que podamos.`);
 })
 

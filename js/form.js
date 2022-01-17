@@ -24,31 +24,11 @@ formulario.addEventListener('submit', function(e){
 })
 */
 
-// en Jquery
+let dataUsuario
 
-const formulario = $("#form");
-
-$("#form").submit(function( event ) {
-
-    let nombre = $("#nombre-form").value;
-    console.log(nombre)
-
-    let apellido = $("#apellido-form").value;
-    console.log(apellido)
-
-    let teléfono = $("#teléfono-form").value;
-    console.log(teléfono)
-
-    let fechaDeNacimiento = $("#nacimiento-form").value;
-    console.log(fechaDeNacimiento)
-
-    let mail = $("#email-form").value
-    console.log(mail)
-
-    let consulta = $("#consulta-form").value
-    console.log(consulta)
+$("dataUsuario").submit(function( event ) {
+    event.preventDefault()
+    dataUsuario = $("dataUsuario").serializeArray()
+    alert(`Gracias ${dataUsuario[0].value} por tu consulta`);
 })
-
-
-
 

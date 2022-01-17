@@ -26,9 +26,9 @@ formulario.addEventListener('submit', function(e){
 
 let dataUsuario
 
-$("dataUsuario").submit(function( event ) {
+$("#form").submit(function( event ) {
     event.preventDefault()
-    dataUsuario = $("dataUsuario").serializeArray()
+    dataUsuario = $("#form").serializeArray()
     alert(`Gracias ${dataUsuario[0].value} por tu consulta`);
 })
 

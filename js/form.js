@@ -29,6 +29,16 @@ let dataUsuario
 $("#form").submit(function( event ) {
     event.preventDefault()
     dataUsuario = $("#form").serializeArray()
-    alert(`Gracias ${dataUsuario[0].value} por tu consulta, nos comunicaremos lo más rápido que podamos.`);
+    alert(`Gracias ${dataUsuario[0].value} por tu consulta, nos comunicaremos lo más rápido qué podamos.`);
+    $('#form').trigger("reset");
 })
+
+//animación con jquery//
+
+$(document).ready(function() {
+    $("#boton").on("click",function(){
+        $(".botonEnviar").animate({width:"600px",height: "300px"}, 5000)
+    });
+});
+
 

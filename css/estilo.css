@@ -280,11 +280,6 @@ main .imagenesDeProductos div .precio {
   margin: auto;
 }
 
-.productosDestacados .contenedorDeProductDestac .pd__columna img{
-  width: 80%;
-  margin-top: 20px;
-}
-
 .container-fluid .logo{
   list-style-type: none;
   text-decoration: none;
@@ -307,7 +302,10 @@ main .imagenesDeProductos div .precio {
 }
 
 .pd__columna img{
+  margin: 5px;
   border-radius: 20px;
+  width: 80%;
+  margin-top: 20px;
 }
 
 .pd__columna img:hover{

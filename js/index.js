@@ -102,12 +102,12 @@ const productosDes = [
 document.addEventListener("DOMContentLoaded", () => {
 	productosDes.forEach((prod) => {
 		let article = `
-        <article class="pd__columna" id="${prod.id}">
+        <article class="pd__columna wow animate__animated animate__zoomIn" id="${prod.id}">
             <img src="${prod.imagen}" alt="${prod.alt}">
             <h4>${prod.nombre}</h4>
             <p><b>$${prod.precio}</p></b>
             <p>${prod.cuotas}</p>
-            <button onclick="sumarAlCarrito(event)" >Añadir al carrito</button>
+            <button class="botonAnañirAlCarrito" onclick="sumarAlCarrito(event)" >Añadir al carrito</button>
         </article>`;
 		// suma cada article al parent, sin reemplazar el contenido previo.
 		contenedorDeProductDestac.innerHTML += article;

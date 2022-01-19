@@ -309,7 +309,7 @@ main .imagenesDeProductos div .precio {
 }
 
 .pd__columna img:hover{
-  transform: scale(1.4,1.4);
+  transform: scale(1.4,1.2);
 }
 
 .pd__columna h4{
@@ -533,4 +533,16 @@ textarea{
   }
 }
 
+/*diseño del boton de anañir al carrito*/
+.botonAnañirAlCarrito{
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
 
+.botonAnañirAlCarrito:hover{
+  background: #828282;
+  color: black;
+  cursor: pointer;
+}

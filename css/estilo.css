@@ -517,6 +517,7 @@ textarea{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+
   }
   .fotoDeQuienesSomos img{
     grid-area: div;

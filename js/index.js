@@ -105,9 +105,9 @@ document.addEventListener("DOMContentLoaded", () => {
         <article id="${prod.id}">
             <img src="${prod.imagen}" alt="${prod.alt}">
             <h4>${prod.nombre}</h4>
-            <p>$${prod.precio}</p>
+            <p><b>$${prod.precio}</p></b>
             <p>${prod.cuotas}</p>
-            <button onclick="sumarAlCarrito(event)" >Añadir al carrito</button>
+            <button class=botonAñadirCarrito onclick="sumarAlCarrito(event)" >Añadir al carrito</button>
         </article>`;
 		// suma cada article al parent, sin reemplazar el contenido previo.
 		contenedorDeProductDestac.innerHTML += article;

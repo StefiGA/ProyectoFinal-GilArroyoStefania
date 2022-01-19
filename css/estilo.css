@@ -278,6 +278,7 @@ main .imagenesDeProductos div .precio {
 .contenedorDeProductDestac{
   width: 100%;
   margin: auto;
+  margin-top: 20px;
 }
 
 .container-fluid .logo{
@@ -298,7 +299,6 @@ main .imagenesDeProductos div .precio {
   text-align: center;
   align-items: center;
   background-color: #ddf7d6;
-  border-radius: 40px;
 }
 
 .pd__columna img{
@@ -316,7 +316,6 @@ main .imagenesDeProductos div .precio {
 .pd__columna h4{
   margin-top: 5px;
 }
-
 
 .productosDestacados .contenedorDeProductDestac{
   display: grid;
@@ -534,4 +533,5 @@ textarea{
     text-align: center;
   }
 }
+
 

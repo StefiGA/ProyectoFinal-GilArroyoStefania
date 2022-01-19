@@ -298,13 +298,14 @@ main .imagenesDeProductos div .precio {
   margin: 5px;
   text-align: center;
   align-items: center;
+  background-color: #ddf7d6;
 }
 
 .pd__columna img{
   margin: 5px;
   border-radius: 20px;
   width: 80%;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .pd__columna img:hover{

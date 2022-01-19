@@ -102,7 +102,7 @@ const productosDes = [
 document.addEventListener("DOMContentLoaded", () => {
 	productosDes.forEach((prod) => {
 		let article = `
-        <article id="${prod.id}">
+        <article class="pd__columna" id="${prod.id}">
             <img src="${prod.imagen}" alt="${prod.alt}">
             <h4>${prod.nombre}</h4>
             <p><b>$${prod.precio}</p></b>

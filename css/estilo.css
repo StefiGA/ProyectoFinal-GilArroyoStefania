@@ -298,7 +298,6 @@ main .imagenesDeProductos div .precio {
   margin: 5px;
   text-align: center;
   align-items: center;
-  background-color: #ddf7d6;
 }
 
 .pd__columna img{
@@ -311,7 +310,6 @@ main .imagenesDeProductos div .precio {
 .pd__columna img:hover{
   transform: scale(1.4,1.4);
 }
-
 
 .pd__columna h4{
   margin-top: 5px;

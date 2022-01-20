@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		let article = `
         <article class="pd__columna wow animate__animated animate__zoomIn" id="${prod.id}">
             <img src="${prod.imagen}" alt="${prod.alt}">
-            <h4>${prod.nombre}</h4>
+            <h4 class="nombreProductosDestacados">${prod.nombre}</h4>
             <p><b>$${prod.precio}</p></b>
             <p>${prod.cuotas}</p>
             <button class="botonAnañirAlCarrito" onclick="sumarAlCarrito(event)" >Añadir al carrito</button>

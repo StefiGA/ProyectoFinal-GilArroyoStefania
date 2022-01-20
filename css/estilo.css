@@ -294,11 +294,17 @@ main .imagenesDeProductos div .precio {
   font-size: 40px;
 }
 
+.nombreProductosDestacados{
+  font-family: 'EB Garamond', serif;
+  font-size: 35px;
+}
+
 .pd__columna{
   margin: 5px;
   text-align: center;
   align-items: center;
   background-color: #ddf7d6;
+  border-radius: 20px;
 }
 
 .pd__columna img{
@@ -537,12 +543,13 @@ textarea{
 .botonAnañirAlCarrito{
   font-family: 'EB Garamond', serif;
   font-size: 20px;
-  background-color: white;
+  background-color: rgb(243, 234, 234);
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .botonAnañirAlCarrito:hover{
-  background: #828282;
+  background: #9bc794;
   color: black;
   cursor: pointer;
 }

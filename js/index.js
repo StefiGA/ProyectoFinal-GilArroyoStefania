@@ -10,7 +10,7 @@ let productos;
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 const obtenerProductos = () => {
-	$.get("/js/productos.json", (respuesta, estado) => {
+	$.get("./js/productos.json", (respuesta, estado) => {
 		if (estado != "success") return Swal.fire("Error obteniendo datos");
 
 		productos = respuesta.products;

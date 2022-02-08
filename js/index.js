@@ -1,135 +1,96 @@
-// accedo al contenedor que alojará los article por cada prod.
-const contenedorDeProductDestac = document.querySelector(".contenedorDeProductDestac");
-// creo carrito
-const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+$(() => {
+	obtenerProductos();
+	// si el carrito tiene algo, imprime el contenido
+	if (carrito.length) imprimirCarrito();
+});
+// variable que contendra el array de productos
+let productos;
 
-// array de objetos. cada objeto es un producto
-const productosDes = [
-	{
-		id: 1,
-		imagen: "./Imagenes/Plantas/Planta-Cherry.jpg",
-		alt: "planta rosa",
-		nombre: "Cherry",
-		tipo: "interior",
-		precio: 1300,
-		cuotas: "3 cuotas sin interés",
-	},
-	{
-		id: 2,
-		imagen: "./Imagenes/Plantas/Planta-LitleMercury.jpg",
-		alt: "planta verde y rosa de hojas chicas",
-		nombre: "Litle Mercury",
-		tipo: "exterior",
-		precio: 1200,
-		cuotas: "3 cuotas sin interés",
-	},
-	{
-		id: 3,
-		imagen: "./Imagenes/Plantas/Planta-Mary.jpg",
-		alt: "planta de hojas rojas y chicas",
-		nombre: "Mary",
-		tipo: "interior",
-		precio: 1500,
-		cuotas: "3 cuotas sin interés",
-	},
-	{
-		id: 4,
-		imagen: "./Imagenes/Macetas/Maceta-Silk.jpg",
-		alt: "planta joven rosa",
-		nombre: "Silk",
-		tipo: "interior",
-		precio: 2800,
-		cuotas: "3 cuotas sin interés",
-	},
-    {
-		id: 5,
-		imagen: "./Imagenes/Macetas/Maceta-Elegante.jpg",
-		alt: "planta de flores secas con maceta alargada",
-		nombre: "Elegante",
-		tipo: "interior",
-		precio: 1900,
-		cuotas: "3 cuotas sin interés",
-	},
-    {
-		id: 6,
-		imagen: "./Imagenes/Macetas/Maceta-Cheeky.jpg",
-		alt: "ramo de flores rojos con maceta en forma de circulos",
-		nombre: "Cheeky",
-		tipo: "interior",
-		precio: 1800,
-		cuotas: "3 cuotas sin interés",
-	},
-    {
-		id: 7,
-		imagen: "./Imagenes/Macetas/Maceta-Holly.jpg",
-		alt: "planta de flores chicas con maceta transparente",
-		nombre: "Holly",
-		tipo: "interior",
-		precio: 1900,
-		cuotas: "3 cuotas sin interés",
-	},
-    {
-		id: 8,
-		imagen: "./Imagenes/Plantas/Exterior/Planta nicole.jpg",
-		alt: "planta de hojas verdes largas",
-		nombre: "Nicole",
-		tipo: "interior",
-		precio: 2800,
-		cuotas: "3 cuotas sin interés",
-	},
-    {
-		id: 9,
-		imagen: "./Imagenes/Plantas/Exterior/Planta victor.jpg",
-		alt: "cactus grande verde",
-		nombre: "Victor",
-		tipo: "interior",
-		precio: 2100,
-		cuotas: "3 cuotas sin interés",
-	},
-    {
-		id: 10,
-		imagen: "./Imagenes/Plantas/Interior/Planta charllote.jpg",
-		alt: "planta de hojas violetas y verdes",
-		nombre: "Charllote",
-		tipo: "interior",
-		precio: 2900,
-		cuotas: "3 cuotas sin interés",
-	},
-];
+// busco en localStorage el carrito. Si no está (primera vez que usuario usa la pagina), carrito es un array vacio
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-// se ejecuta al cargarse el html. Imprime todos los objetos
-// del array "productos"
-document.addEventListener("DOMContentLoaded", () => {
-	productosDes.forEach((prod) => {
-		let article = `
-        <article class="pd__columna wow animate__animated animate__zoomIn" id="${prod.id}">
+const obtenerProductos = () => {
+	$.get("/js/productos.json", (respuesta, estado) => {
+		if (estado != "success") return Swal.fire("Error obteniendo datos");
+
+		productos = respuesta.products;
+
+		imprimirProductos(true);
+	});
+};
+
+const imprimirProductos = (animacion) => {
+	$(".contenedorDeProductos").empty();
+	let delay = 50;
+	// compruebo valor de animacion para asignar usando operador ternario
+	let fade = animacion ? 800 : 0;
+
+	productos.forEach((prod) => {
+		// si el producto ya esta en el carrito, esto devuelve true. Y aplica propiedad "disabled" al boton
+		let enCarrito = carrito.some(
+			(prodEnCarrito) => prodEnCarrito.id === prod.id
+		);
+		delay = animacion ? delay + 200 : 0;
+
+		$(".contenedorDeProductos").append(
+			$(`<article class="pd__columna wow animate__animated animate__zoomIn">
             <img src="${prod.imagen}" alt="${prod.alt}">
             <h4 class="nombreProductosDestacados">${prod.nombre}</h4>
             <p><b>$${prod.precio}</p></b>
             <p>${prod.cuotas}</p>
-            <button class="botonAnañirAlCarrito" onclick="sumarAlCarrito(event)" >Añadir al carrito</button>
-        </article>`;
-		// suma cada article al parent, sin reemplazar el contenido previo.
-		contenedorDeProductDestac.innerHTML += article;
+            <button id="${prod.id}" class="botonAnañirAlCarrito" onclick="agregarAlCarrito(event)" ${
+				enCarrito ? "disabled" : null
+			} >${enCarrito ? "En Carrito" : "Añadir al Carrito"}</button>
+        </article>`)
+				.hide()
+				.delay(delay)
+				.fadeIn(fade)
+		);
 	});
-});
+};
 
-function sumarAlCarrito(event) {
-	// accedemos al ID del elemento padre del elemento que disparo el evento
-	console.log(event.target.parentElement.id);
+const agregarAlCarrito = (e) => {
+	e.target.textContent = "En Carrito";
+	e.target.disabled = true;
+	const idSeleccionado = Number(e.target.id);
+	const productoFiltrado = productos.find((p) => p.id === idSeleccionado);
+	carrito.push(productoFiltrado);
+	localStorage.setItem("carrito", JSON.stringify(carrito));
+	imprimirCarrito();
+};
 
-	// Metodo find devuelve el primer elemento que coincide con la busqueda
-	// buscamos el elemento del array productos que coincida en ID con el
-	// id que trajo el evento
-	const prodSeleccionado = productosDes.find(
-		(p) => p.id === Number(event.target.parentElement.id)
-	);
-	console.log(prodSeleccionado);
-	// guardar prod seleccionado en array carrito
-	carrito.push(prodSeleccionado);
-	guardarEnLocalStorage(carrito);
-}
+const imprimirCarrito = () => {
+	// reinicio el contenido para evitar copia repetida
+	$("#carrito").empty();
 
-function guardarEnLocalStorage(array) {
-	localStorage.setItem("carrito", JSON.stringify(array));
-}
+	let total = 0;
+
+	carrito.forEach((p) => {
+		total += total + Number(p.precio);
+		$("#carrito").append(`
+		<tr>
+		    <td>${p.nombre}</td>
+		    <td>$${p.precio}</td>
+		    <td><button id="${p.id}" class="eliminar" onclick="eliminarProducto(event)">Eliminar</button></td>
+		</tr>
+		`);
+	});
+	$("#carrito").append(`
+    <span class="total">Total $${total.toFixed(2)}`);
+};
+
+const eliminarProducto = (e) => {
+	const id = Number(e.target.id);
+	const index = carrito.findIndex((p) => p.id === id);
+	carrito.splice(index, 1);
+
+	// reemplazo el carrito de localStorage
+	localStorage.setItem("carrito", JSON.stringify(carrito));
+
+	// imprimo el carrito adentro del modal
+	imprimirCarrito();
+
+	// esto no esta bueno, pero es necesario para que no queden deshabilitados los botones
+	imprimirProductos(false);
+};
+

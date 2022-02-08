@@ -69,9 +69,9 @@ const imprimirCarrito = () => {
 		total += total + Number(p.precio);
 		$("#carrito").append(`
 		<tr>
-		    <td>${p.nombre}</td>
-		    <td>$${p.precio}</td>
-		    <td><button id="${p.id}" class="eliminar" onclick="eliminarProducto(event)">Eliminar</button></td>
+		<td>${p.nombre}</td>
+		<td>$${p.precio}</td>
+		<td><button id="${p.id}" class="eliminar" onclick="eliminarProducto(event)">Eliminar</button></td>
 		</tr>
 		`);
 	});

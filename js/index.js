@@ -66,7 +66,7 @@ const imprimirCarrito = () => {
 	let total = 0;
 
 	carrito.forEach((p) => {
-		total += total + Number(p.precio);
+		total += Number(p.precio);
 		$("#carrito").append(`
 		<tr>
 		<td>${p.nombre}</td>

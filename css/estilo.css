@@ -684,6 +684,9 @@ textarea{
 
 /* ---------- Tarjeta Trasera ----------*/
 .trasera {
+  width: 100%;
+	max-width: 1000px;
+  height:100%;
 	background: url(../Imagenes/Checkout/bg-tarjeta/bg-tarjeta-02.jpg);
 	background-size: cover;
 	position: absolute;

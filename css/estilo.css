@@ -578,6 +578,12 @@ textarea{
 
 #modal button.eliminar {
 	font-size: small;
+  margin-left: 2rem;
+}
+
+.carrito-container button {
+  background-color: transparent;
+  border: none;
 }
 
 /* formulario de tarjeta */ 
@@ -674,7 +680,7 @@ textarea{
 
 /* ---------- Tarjeta Trasera ----------*/
 .trasera {
-	background: url(../Imagenes/Checkout/bg-tarjeta-02.jpg);
+	background: url(../Imagenes/Checkout/bg-tarjeta/bg-tarjeta-02.jpg);
 	background-size: cover;
 	position: absolute;
 	top: 0;
